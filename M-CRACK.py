@@ -16,7 +16,7 @@ bit = platform.architecture()[0]
  
 if bit == "64bit":
  
-        from  import ____HASAN___
+        from import ____HASAN___
  
         ____HASAN___()
  
