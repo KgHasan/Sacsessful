@@ -1,10 +1,9 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-from os 
 from queue import Queue
 from optparse import OptionParser
-import time,sys,socket,threading,logging,urllib.request,random,system
+import time,sys,socket,threading,logging,urllib.request,random
 
 
 def user_agent():
@@ -82,8 +81,8 @@ logo = ("""\033[1;92m
 \033[1;93m ۝࿐\033[1;97m════════════════════════════════════════\033[1;93m࿐۝""")
 
 def usage():
-	os.system('''clear''')
-	os.system('''xdg-open https://facebook.com/groups/551365756758487/''')
+	#os.system('''clear''')
+	#os.system('''xdg-open https://facebook.com/groups/551365756758487/''')
 	print(logo)
 	print(''' Indian Cyber Attark From Bangladesh Hacker ''')
 	sys.exit()
