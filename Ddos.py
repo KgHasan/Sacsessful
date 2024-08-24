@@ -75,7 +75,7 @@ def dos2():
 
 
 def usage():
-	#print(" Bangladesh Hacker Hasan Islam ")
+	print("\033[1;93m Bangladesh Hacker Hasan Islam ")
 	print (''' \033[92m	Hammer Dos Script v.1 http://www.canyalcin.com/
 	It is the end user's responsibility to obey all applicable laws.
 	It is just for server testing script. Your ip is visible. \n
